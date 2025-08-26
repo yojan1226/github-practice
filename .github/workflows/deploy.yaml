@@ -1,0 +1,15 @@
+name: "pipeline practice"
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    hello-world:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "print the statement"
+              run: echo "i am a devops engineer"
+            - name: "current date"
+              run: date
